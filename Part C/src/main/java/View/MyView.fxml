@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import View.CharDisplayer?>
+<?import View.MazeDisplayer?>
+<?import View.SolutionDisplayer?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="Bpane" onKeyPressed="#KeyPressed" onMouseDragged="#mouseDrag" onMousePressed="#setCurrXY" onScroll="#zoom" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController">
+    <left>
+        <VBox prefHeight="200.0" prefWidth="178.0" spacing="5.0" BorderPane.alignment="CENTER">
+            <children>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <Button fx:id="catchButton" onAction="#generateMaze" prefHeight="25.0" prefWidth="167.0" text="Catch 'em All !" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+               <Button fx:id="solutionButton" mnemonicParsing="false" onAction="#showSolution" prefHeight="27.0" prefWidth="168.0" text="Show Solution Nub!" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+
+                </GridPane>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </VBox>
+    </left>
+    <bottom>
+        <HBox BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Status bar" />
+            </children>
+        </HBox>
+    </bottom>
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                        <MenuItem mnemonicParsing="false" onAction="#openPlay" text="New" />
+                                <MenuItem fx:id="saveView" mnemonicParsing="false" onAction="#saveMaze" text="Save" />
+                        <MenuItem fx:id="loadView" mnemonicParsing="false" onAction="#loadMaze" text="Load" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Options">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#openProp" text="Properties" />
+                        <Menu mnemonicParsing="false" text="Music">
+                          <items>
+                              <Menu mnemonicParsing="false" text="different song">
+                                <items>
+                                    <RadioMenuItem fx:id="instrumentalBUT" mnemonicParsing="false" onAction="#playThemeInstrumental" selected="true" text="Instrumental" />
+                                    <RadioMenuItem fx:id="hebrewBUT" mnemonicParsing="false" onAction="#playThemeHebrew" text="Hebrew" />
+                                    <RadioMenuItem fx:id="englishBUT" mnemonicParsing="false" onAction="#playThemeEnglish" text="English" />
+                                </items>
+                              </Menu>
+                            <MenuItem fx:id="mute" disable="true" mnemonicParsing="false" onAction="#muteFunc" text="mute" />
+                              <MenuItem fx:id="unmute" disable="true" mnemonicParsing="false" onAction="#unmuteFunc" text="unmute" />
+                          </items>
+                        </Menu>
+                        <MenuItem mnemonicParsing="false" onAction="#musicOptions" text="music" visible="false" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem onAction="#setAbout" text="About" />
+                        <MenuItem onAction="#openINS" text="Instructions" />
+                            </items>
+                        </Menu>
+                  <Menu mnemonicParsing="false" text="Exit">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#exit" text="EXIT" />
+                    </items>
+                  </Menu>
+                    </menus>
+                </MenuBar>
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <Pane fx:id="pane" BorderPane.alignment="CENTER">
+            <children>
+                <MazeDisplayer fx:id="mazeDisplayer" height="400.0" imageFileNameGoal="resources/goal.jpg" imageFileNameWall="resources/grassWall.jpg" width="400.0" />
+                <SolutionDisplayer fx:id="solutionDisplayer" height="400.0" imagePokeball="resources/pokeBall.jpg" width="400.0" />
+                <CharDisplayer fx:id="charDisplayer" height="400.0" imageCharCurrPos="resources/ash_down.jpg" imageCharDown="resources/ash_down.jpg" imageCharLeft="resources/ash_left.jpg" imageCharRight="resources/ash_right.jpg" imageCharUp="resources/ash_up.jpg" width="400.0" />
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </Pane>
+
+    </center>
+</BorderPane>

@@ -1,0 +1,36 @@
+2019.06.15 17:50:04.717 INFO  Model.MyModel - Server Started at port 5400!
+2019.06.15 17:50:04.720 INFO  Model.MyModel - Server's Strategy: Generate Maze
+2019.06.15 17:50:04.722 INFO  Model.MyModel - Server Started at port 5401!
+2019.06.15 17:50:04.722 INFO  Model.MyModel - Server's Strategy: Solve Search Problem
+2019.06.15 17:50:04.722 INFO  Model.MyModel - Server is waiting for clients...
+2019.06.15 17:50:09.855 INFO  Model.MyModel - Client: Client.Client@39e6016a at port 5400 asked for a 20*20 size maze with My Maze Generator
+2019.06.15 17:50:21.958 INFO  Model.MyModel - Client: Client.Client@3541d28d at port 5400 asked for a 20*20 size maze with My Maze Generator
+2019.06.15 17:51:02.643 INFO  Model.MyModel - The Maze Generating Server Stopped!
+2019.06.15 17:51:02.646 INFO  Model.MyModel - The Maze Solving Server Stopped!
+2019.06.15 17:51:41.782 INFO  Model.MyModel - Server Started at port 5400!
+2019.06.15 17:51:41.786 INFO  Model.MyModel - Server's Strategy: Generate Maze
+2019.06.15 17:51:41.788 INFO  Model.MyModel - Server Started at port 5401!
+2019.06.15 17:51:41.788 INFO  Model.MyModel - Server's Strategy: Solve Search Problem
+2019.06.15 17:51:41.789 INFO  Model.MyModel - Server is waiting for clients...
+2019.06.15 17:51:52.487 INFO  Model.MyModel - Client: Client.Client@136d95fc at port 5400 asked for a 20*20 size maze with My Maze Generator
+2019.06.15 17:52:04.977 INFO  Model.MyModel - Client: Client.Client@6c6db36d at port 5400 asked for a 20*20 size maze with My Maze Generator
+2019.06.15 17:52:07.801 INFO  Model.MyModel - The Maze Generating Server Stopped!
+2019.06.15 17:52:07.801 INFO  Model.MyModel - The Maze Solving Server Stopped!
+2019.06.16 02:33:13.814 INFO  Model.MyModel - Server Started at port 5400!
+2019.06.16 02:33:13.817 INFO  Model.MyModel - Server's Strategy: Generate Maze
+2019.06.16 02:33:13.819 INFO  Model.MyModel - Server Started at port 5401!
+2019.06.16 02:33:13.819 INFO  Model.MyModel - Server's Strategy: Solve Search Problem
+2019.06.16 02:33:13.819 INFO  Model.MyModel - Server is waiting for clients...
+2019.06.16 02:33:20.777 INFO  Model.MyModel - Client: Client.Client@4a1bc60c at port 5400 asked for a 20*20 size maze with My Maze Generator
+2019.06.16 02:33:41.193 INFO  Model.MyModel - Client: Client.Client@3bf2e02c at port 5400 asked for a 20*20 size maze with My Maze Generator
+2019.06.16 02:33:50.812 INFO  Model.MyModel - Client: Client.Client@2ea85595 at port 5401 asked to solve a maze using the BestFirstSearch algorithm
+2019.06.16 02:33:58.376 INFO  Model.MyModel - The Maze Generating Server Stopped!
+2019.06.16 02:33:58.377 INFO  Model.MyModel - The Maze Solving Server Stopped!
+2019.06.16 02:35:12.962 INFO  Model.MyModel - Server Started at port 5400!
+2019.06.16 02:35:12.965 INFO  Model.MyModel - Server's Strategy: Generate Maze
+2019.06.16 02:35:12.967 INFO  Model.MyModel - Server Started at port 5401!
+2019.06.16 02:35:12.967 INFO  Model.MyModel - Server's Strategy: Solve Search Problem
+2019.06.16 02:35:12.967 INFO  Model.MyModel - Server is waiting for clients...
+2019.06.16 02:35:28.108 INFO  Model.MyModel - Client: Client.Client@6ed535bc at port 5400 asked for a 20*20 size maze with My Maze Generator
+2019.06.16 02:36:44.391 INFO  Model.MyModel - The Maze Generating Server Stopped!
+2019.06.16 02:36:44.391 INFO  Model.MyModel - The Maze Solving Server Stopped!
